@@ -1,0 +1,73 @@
+@import "../variables";
+.read-block{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  row-gap: 20px;
+  height: auto;
+  margin: 5% auto;
+}
+
+.btns{
+  display: flex;
+  justify-content: space-between;
+
+  &__route{
+    display: inherit;
+    column-gap: 20px;
+  }
+
+}
+
+.btn-back {
+  background-color: white;
+  border:1px $lightgrey solid;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.btn-edit{
+  background-color: $blue;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  color: white;
+}
+
+.btn-delete{
+  button {
+    background-color: #F34949;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+  }
+}
+
+.task{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  border: 1px $lightgrey solid;
+  border-radius: 5px;
+  padding: 10px;
+
+  &__part{
+    display: inherit;
+    flex-direction: column;
+    overflow-wrap: break-word;
+
+    span:first-child{
+      text-transform: uppercase;
+      color: #818181;
+    }
+
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .read-block{
+    width: 90%;
+    margin-top: 20%;
+  }
+}

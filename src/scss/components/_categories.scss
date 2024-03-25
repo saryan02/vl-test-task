@@ -1,0 +1,31 @@
+@import '../variables';
+
+.categories-block{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  //width: 100%;
+  border: 1px $lightgrey solid;
+  border-radius: 5px;
+
+  &__checkbox-menu{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+
+  span{
+    text-transform: uppercase;
+    padding-bottom:10px ;
+  }
+
+}
+
+
+@media only screen and (max-width: 960px) {
+
+  .categories-block {
+    flex-direction: row;
+  }
+}

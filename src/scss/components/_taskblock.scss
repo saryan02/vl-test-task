@@ -1,0 +1,26 @@
+@import "../variables";
+
+.task-block{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 20px 20px 20px;
+  border: 1px $lightgrey solid;
+  height: 120px;
+  border-radius: 5px;
+  flex-grow: 1;
+  margin-bottom: 20px;
+  cursor: pointer;
+
+&__title{
+  &:hover{
+    color: #46a8ee;
+  }
+}
+  &__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+  }
+}

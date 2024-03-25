@@ -1,0 +1,42 @@
+@import "../variables";
+
+
+.btns-back{
+  margin-bottom: 20px;
+  button{
+    background-color: white;
+    border: 1px $lightgrey solid;
+    padding: 10px;
+    border-radius: 5px;
+
+  }
+
+}
+.update-block{
+  width: 50%;
+  margin: 5% auto;
+
+  button{
+    cursor: pointer;
+  }
+}
+
+.task{
+
+  button{
+    width: 100px;
+    height: 40px;
+    background-color: $blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .update-block{
+    width: 90%;
+    margin:10% auto ;
+
+  }
+}

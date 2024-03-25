@@ -1,0 +1,87 @@
+@import 'components/all.scss';
+
+.container {
+  width: 90%;
+  margin: 40px auto;
+  //min-width: 960px;
+
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+
+
+  &__search {
+    gap: 20px;
+    display: inherit;
+    flex-direction: column;
+  }
+
+
+  &__right {
+    width: 80%;
+  }
+
+  &__tasks {
+    width: auto;
+  }
+}
+
+  .btn-add-task {
+    background-color: $blue;
+    border: none;
+    color: white;
+    padding: 12px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+
+//@media only screen and (orientation: portrait) and (min-device-width: 428px) and (max-device-height: 926px) and (-webkit-device-pixel-ratio: 3){
+//  .main{
+//    flex-direction: column;
+//    //min-width: 0;
+//  }
+//
+//  .container{
+//
+//  }
+//}
+
+
+@media only screen and (max-width: 960px) {
+
+  .btn-add-task{
+    position: absolute;
+    top: 2%;
+  }
+
+  .main{
+    flex-direction: column;
+
+    margin-top: 20%;
+
+    &__right{
+      //display: inherit;
+      width: 100%;
+      margin: 0 auto;
+      order: 2;
+    }
+
+    &__search{
+      //display: inherit;
+      order: 1;
+      margin-bottom: 10%;
+
+    }
+
+    &__tasks{
+      display: flex;
+      flex-direction: column;
+    }
+
+  }
+
+
+}
