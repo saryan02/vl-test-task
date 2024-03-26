@@ -2,14 +2,7 @@ import React from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
 
-interface Task {
-    id: number;
-    title: string;
-    date: string;
-    priority: string;
-    mark: string[];
-    description: string;
-}
+
 
 const Read: React.FC = () => {
     const location = useLocation();
